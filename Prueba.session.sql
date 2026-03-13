@@ -12,3 +12,8 @@ SELECT count(nom) FROM dades_ponent WHERE nom LIKE "an%";
 
 SELECT nom FROM dades_ponent WHERE cognom = "rovira";
 
+SELECT count(nom) FROM dades_ponent WHERE nom = "anna" AND cognom = "rovira";
+
+SELECT count(*) nom FROM dades_ponent WHERE nom = "anna" OR cognom = "rovira" GROUP BY nom;
+
+SELECT count(*) AS cuenta FROM dades_ponent WHERE nom = "anna" OR cognom = "rovira" ORDER BY cueta;
